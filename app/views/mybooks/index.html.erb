@@ -22,7 +22,7 @@
         <td><%= mybook.author %></td>
         <td><%= number_to_currency(mybook.price, unit: '¥', precision: 0) %></td>
         <td><%= mybook.publisher %></td>
-        <td><%= mybook.date %></td>
+        <td><%= mybook.date.strftime("%Y/%m/%d") %></td>
         <td><%= mybook.isbn %></td>
         <td><%= link_to 'Show', mybook %></td>
         <td><%= link_to 'Edit', edit_mybook_path(mybook) %></td>
